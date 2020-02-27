@@ -1,0 +1,115 @@
+/* 
+    此文件中放每个页面中都有top区域和logo区域的样式
+*/
+/* ================================ top 区域的 css  */
+#top{
+    background-color: #F9F9F9;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+.top{
+    height: 30px;
+}
+.top .top-user>li{
+    float: left;
+    height: 30px;
+    line-height: 30px;
+
+}
+.top .top-user li a:hover{
+    color: #F76120;
+}
+.top .top-user>li>a{
+    padding: 0 10px;
+}
+.top .top-user>.collection>a{
+    padding-left: 20px;
+    background: url("../imgs/star.png") no-repeat;
+}
+.top .top-user>.collection>a:hover{
+    background: url("../imgs/star-hover.png") no-repeat;
+}
+.top .top-user>.login{
+    color: #F76120;
+}
+.top .top-user>.reg>a{
+    border-right: 1px solid #ccc;
+}
+
+/* ---------------- 右侧 */
+
+.top-info>li{
+    float: left;
+    margin-left: 2px;
+    height: 30px;
+    line-height: 30px;
+    position: relative; /* 参考点 */
+}
+.top-info>li>a{
+    border-right: 1px solid #ccc;
+    padding: 0 21px 0 11px;
+}
+.top-info>li>a:hover{
+    color: #F76120;
+}
+.sanjiao{
+    width: 0;
+    height: 0;
+    border: 4px solid transparent;
+    border-top-color: #666;
+    position: absolute;
+    top: 13px;
+    right: 8px;
+}
+
+/* ---------------- 下拉框 */
+.cover{
+    position: absolute;
+    top: 0;
+    left: -2px;
+    right: 0;
+    bottom: 2px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top: 0;
+    border-bottom: 0;
+    padding-left: 11px;
+    /* padding-right: 18px; */
+    line-height: 30px;
+  color: #F76120;
+    cursor: pointer;
+    display: none;
+}
+.cover-list{
+    position: absolute;
+    top: 27px;
+    right: 0;
+    border: 1px solid #ccc;
+    min-width: 80px;
+    background-color: #fff;
+    display: none;
+}
+.cover-list>ul{
+    padding:15px;
+}
+.cover-list>ul>li{
+    white-space: nowrap;
+}
+.sanjiaot{
+    width: 0;
+    height: 0;
+    border: 4px solid transparent;
+    border-bottom-color: #666;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+.top-info>li:hover a{
+    border-right: 1px;
+}
+.top-info>li:hover .cover{
+    display: block;
+}
+.top-info>li:hover .cover-list{
+    display: block;
+}
